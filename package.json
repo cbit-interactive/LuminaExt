@@ -1,0 +1,35 @@
+{
+  "name": "luminalang",
+  "displayName": "LuminaLang",
+  "description": "Lumina is a programming language based on C++, Java, and Kotlin",
+  "version": "0.0.1",
+  "publisher": "CBit Interactive",
+  "icon":"./icon.png",
+  "repository": {
+    "type": "githubusercontent",
+    "url": ""
+  },
+  "engines": {
+    "vscode": "^1.87.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "lum",
+      "aliases": ["Lumina", "lum"],
+      "extensions": [".lum",".lm",".lme"],
+      "configuration": "./language-configuration.json",
+      "icon": {
+        "dark": "./icon.png",
+        "light": "./icon.png"
+      }
+    }],
+    "grammars": [{
+      "language": "lum",
+      "scopeName": "source.lum",
+      "path": "./syntaxes/lum.tmLanguage.json"
+    }]
+  }
+}
